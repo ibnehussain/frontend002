@@ -29,7 +29,7 @@ export class HomePageService {
   
     console.log(emailID)
 
-    let tempVar = this.http.get<boolean>('https://quickkart-backend.azurewebsites.net/api/customer/AddNewSubscriber?emailID='+emailID)
+    let tempVar = this.http.get<boolean>('https://backendapp00125-fzbrbgbba6f3fubt.canadacentral-01.azurewebsites.net/api/customer/AddNewSubscriber?emailID='+emailID)
     console.log(tempVar)
     return tempVar
   }
